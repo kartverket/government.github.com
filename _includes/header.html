@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="{{ site.root }}assets/css/style.css">
-  <link rel="stylesheet" href="{{ site.root }}assets/css/icons.css">
-
-  <script src="{{ site.root }}assets/js/modernizr.js"></script>
-
-  <link rel="shortcut icon" href="{{ site.root }}assets/img/favicon.ico" type="image/x-icon">
-
-  {% include analytics.html %}
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+  {% seo %}
 </head>
 
-<body id="{{ page.id }}" class="{{ page.layout }}">
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+<body{% if page.id %} id="{{ page.id }}"{% endif %} class="{{ page.layout }}">
 
-<header>
-  <div class="container">
-    <a href="/"><span class="logo">GitHub and Government</span></a>
-    <nav>
-      <a href="/community">The Community</a>
-      <a href="/features">Learn More</a>
-      <a href="/submit">Tell your Story</a>
-    </nav>
-  </div>
-</header>
+  <div class="page-header pt-4 pb-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <a href="{{ "/" | relative_url}}"><img class="logo py-3" src="{{ "/assets/img/logomark.svg" | relative_url}}" alt="GitHub and Government"></a>
+        <ul>
+          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/community/" | relative_url}}" class="text-white">Who's using GitHub</a></li>
+          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="https://github.com/government/welcome#readme" class="text-white">Peer Group</a></li>
+          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/accessibility" | relative_url}}" class="text-white">Accessibility</a></li>
+          <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/#contact-a-human" | relative_url}}" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- .full-width here gets closed on support-page.html and home.html layouts -->

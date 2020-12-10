@@ -1,301 +1,101 @@
-#list of GitHub organization usernames, grouped by type
-organizations:
-
-  United States:
-    - adlnet
-    - cfpb
-    - chaos
-    - cmsgov
-    - commercegov
-    - department-of-veterans-affairs
-    - educationdatainitiative
-    - erdc-cm
-    - fcc
-    - gsa
-    - gsa-ocsit
-    - hhs
-    - historyatstate
-    - hpc
-    - imls
-    - informaticslab
-    - libraryofcongress
-    - losalamos
-    - mcc-gov
-    - nasa
-    - nationalparkservice
-    - ncbitools
-    - ncip
-    - nhlbi
-    - nrel
-    - opengovplatform
-    - ozoneplatform
-    - peacecorps
-    - presidential-innovation-fellows
-    - redhawksdr
-    - usagov
-    - usaid
-    - usasearch
-    - usda
-    - usdepartmentoflabor
-    - usepa
-    - usgs
-    - usnationalarchives
-    - virtual-world-framework
-    - whitehouse
-#   - USDA-ERS
-#   - usinterior
-
-  Australia:
-    - actgov
-
-  Argentina:
-    - gcba
-
-  Belgium:
-    - onroerenderfgoed
-
-  Brazil:
-    - interlegis
-    - gabinetedigital
-    - plonegovbr
-    - dadosgovbr
-
-  Canada:
-    - cityofgreatersudbury
-    - cityofottawa
-    - nsgov
-    - pwgsc
-    - wet-boew
-
-  Estonia:
-    - vvk-ehk
-
-  Finland:
-    - avoinministerio
-    - City-of-Helsinki
-    - Lounaispaikka
-    - HSLdevcom
-
-  France:
-    - erasme
-    - etalab
-    - VilleDeMontpellier
-
-  Germany:
-    - gbv
-    - lobid
-
-  New Zealand:
-    - linz
-
-  Norway:
-    - difi
-    - kartverket
-
-  Puerto Rico:
-    - commonwealth-of-puerto-rico
-
-  Sweden:
-    - edelegationen
-    - libris
-    - malmostad
-    - rinfo
-    - The-Municipality-of-Staffanstorp
-
-  United Kingdom:
-    - alphagov
-    - ministryofjustice
-    - lichfield-district-council
-    - east-sussex-county-council
-    - datagovuk
-    - EnvironmentAgency
-    - CarersBeta
-
-  United States:
-    - adlnet
-    - cfpb
-    - chaos
-    - cmsgov
-    - commercegov
-    - department-of-veterans-affairs
-    - educationdatainitiative
-    - erdc-cm
-    - fcc
-    - gsa
-    - gsa-ocsit
-    - hhs
-    - historyatstate
-    - hpc
-    - imls
-    - informaticslab
-    - libraryofcongress
-    - losalamos
-    - mcc-gov
-    - nasa
-    - nationalparkservice
-    - ncbitools
-    - ncip
-    - nhlbi
-    - nrel
-    - opengovplatform
-    - ozoneplatform
-    - peacecorps
-    - presidential-innovation-fellows
-    - redhawksdr
-    - usagov
-    - usaid
-    - usasearch
-    - usda
-    - usdepartmentoflabor
-    - usepa
-    - usgs
-    - usnationalarchives
-    - virtual-world-framework
-    - whitehouse
-#   - USDA-ERS
-#   - usinterior
-
-  European Union:
-    - europeana
-
-  International:
-    - ogpl
-    - rOpenGov
-
-  U.S. States:
-    - agrc
-    - nysenate
-#    - wsdot
-    - nys-its
-
-  U.S. County:
-    - sfcta
-    - miamidade
-    - slugis
-
-  U.S. Special District:
-    - cleveland-metroparks
-
-  U.S. City:
-    - chicago
-#    - sfgov
-    - cityofnewyork
-    - octolabs
-    - city-of-bloomington
-    - city-of-bellingham
-    - egovpdx
-    - NYCComptroller
-    - CityOfPhiladelphia
-    - cambridgegis
-    - cocdata
-    - CityOfBoston
-    - openlexington
-    - CORaleigh
-    - Honolulu
-    - cityofasheville
-    - lfucg
-
-  Civic Hackers:
-    - infoculture
-    - codeforamerica
-    - sunlightlabs
-    - opengovfoundation
-    - open-city
-    - gitmachines
-    - dobtco
-    - openplans
-    - okfde
-    - okfegypt
-    - okfn
-    - openoakland
-    - localdata
-    - unitedstates
-    - statedecoded
-    - openva
-    - localwiki
-    - civio
-    - bundestag
-    - teampopong
-    - mysociety
-    - openaustralia
-    - okfn-brasil
-    - dataviz
-    - OpenTwinCities
-    - thacker
-    - opennorth
-    - hasadna
-    - codeforjapan
-    - opennewzealand
-    - theodi
-    - yourmapper
-    - CodeandoMexico
-    - okfngr
-    - codeforeurope
-    - g0v
-    - npp
-    - odhk
-    - codefortomorrow
-    - KoelnAPI
-    - okfirl
-
-#global settings
-title: "Make government better, together."
-description: "Stories of open data, open source, and open collaboration"
+# global settings
+title: "GitHub and Government"
+description: "GitHub helps government build software better, together"
 permalink: "/stories/:title"
-url: http://government.github.com
+url: https://government.github.com
 relative_permalinks: false
-tagline: 'Stories of <a href="/categories/#open-source"class="open source" title="Code or creation materials made easily accessible and free to the public.">open source</a>, <a href="/categories/#open-data" class="open data" title="Data made easily accessible and free to the public.">open data</a>, and <a href="/categories/#open-government" class="open government" title="An acessible, transparent and forthcoming with data government agency.">open government</a>.'
-analytics_account: "UA-3769691-28"
 
-#build settings
-exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "readme.md", "node_modules"]
-root: "/"
-paginate: 6
+# build settings
+exclude: ["script", "vendor", "bower.json", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "package.json", "node_modules"]
 markdown: kramdown
+plugins:
+  - jekyll-avatar
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-sitemap
+  - jekyll-octicons
 
-#prose settings
-prose_server: "http://prose.io"
-prose:
-  siteurl: 'http://government.github.com'
-  media: "images"
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "story"
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          value: ""
-          type: "text"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-          type: "text"
-      - name: "description"
-        field:
-          element: "textarea"
-          label: "Description"
-          value: ""
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          placeholder: "/images/YOUR_IMAGE.png"
-          value: ""
-          type: "text"
-      - name: "category"
-        field:
-          element: "select"
-          label: "Category"
-          options:
-            - name: "Open Government"
-              value: "open government"
-            - name: "Open Data"
-              value: "open data"
-            - name: "Open Source"
-              value: "open source"
+sass:
+  style: :compressed
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  load_paths:
+    - node_modules/
+
+# orgs on front page
+featured_orgs:
+  - gcba
+  - nla
+  - GeoscienceAustralia
+  - qld-gov-au
+  - onroerenderfgoed
+  - geobolivia
+  - dadosgovbr
+  - tisorocaba
+  - canada-ca
+  - wet-boew
+  - e-gob
+  - City-of-Helsinki
+  - itschool
+  - linz
+  - govph
+  - commonwealth-of-puerto-rico
+  - The-Municipality-of-Staffanstorp
+  - malmostad
+  - ogdch
+  - alv-ch
+  - city-of-bloomington
+  - cityofchattanooga
+  - cityofnewyork
+  - Honolulu
+  - mnhrc
+  - NYCComptroller
+  - ArlingtonCounty
+  - sfcta
+  - olcf
+  - ORNL
+  - azgs
+  - nysenate
+  - State-of-Arizona
+  - alphagov
+  - BarnsleyCouncil
+  - BristolCityCouncil
+  - cabinetoffice
+  - datagovuk
+  - dfid
+  - east-sussex-county-council
+  - hmrc
+  - MetOffice
+  - 18f
+  - CA-CST-SII
+  - cfpb
+  - cooperhewitt
+  - erdc
+  - fda
+  - gsa
+  - hhs
+  - nasa
+  - USDeptVeteransAffairs
+  - virtual-world-framework
+  - whitehouse
+  - bundestag
+  - CodeandoMexico
+  - codeforeurope
+  - dataviz
+  - dobtco
+  - KoelnAPI
+  - mysociety
+  - openva
+  - postcode
+  - sunlightlabs
+  - theodi
+  - codeforamerica
+  - codeforaustralia
+  - okfngr
+  - okfn
+  - nuknightlab
+  - dssg
+  - codeforboston
+  - teampopong
